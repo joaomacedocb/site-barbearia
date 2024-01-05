@@ -1,0 +1,220 @@
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.main-header {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 22px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #575757;
+    font-weight: bold;
+}
+
+nav a:hover {
+    font-size: 20px;
+    color: rgb(48, 163, 48);
+    transition:ease-in 500ms;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.apresentacao {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(./img/barbearia.png);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.apresentacao .apresentacao-texto {
+    width: 80%;
+}
+
+.whatsapp {
+    width: 30%;
+    padding: 10px 0;
+    background-color: #575757;
+    color: #f0f0f0;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 24px;
+    transition: 1s all;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.whatsapp img {
+    width: 30px;
+}
+
+.whatsapp:hover {
+    background-color: #858585;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.apresentacao h1 {
+    text-transform: uppercase;
+    font-size: 44px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.apresentacao p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.valores {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 1080px;
+    margin: 28px auto;
+}
+
+.missao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.valores img {
+    height: 100px;
+}
+
+.valores p {
+    margin-top: 12px;
+    text-align: center;
+}
+
+main {
+    width: 1080px;
+    margin: 0px auto;
+}
+
+main h3 {
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+main p {
+    margin-bottom: 24px;
+}
+
+.beneficios {
+    width: 1080px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.beneficios img {
+    width: 500px;
+    box-shadow: 10px 10px 5px rgb(131, 131, 131);
+}
+
+footer {
+    text-align: center;
+    background-color: #f0f0f0;
+    margin-top: 50px;
+    margin-bottom: 0;
+ }
+ 
+ footer img {
+     padding: 30px 2px 0 0;
+ }
+ 
+ footer p {
+     font-size: 12px;
+     padding-bottom: 30px;
+     color: #575757;
+ }
+
+
+@media screen and (max-width: 480px) {
+
+    header .logo-div {
+        display: none;
+    }
+
+    .main-header ul li a {
+        position: static;
+        color: #f0f0f0;
+    }
+
+    .main-header, .valores, .missao, .beneficios, .beneficios-cab, main {
+    width: 90%;}
+
+    .logo {
+        text-align: center;
+    }
+
+    .apresentacao .apresentacao-texto {
+        width: 90%;
+    }
+
+    .apresentacao .apresentacao-texto h1 {
+        font-size: 32px;
+    }
+
+    .beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+    .beneficios img {
+        width: 250px;
+        margin-top: 36px;
+    }
+
+    .valores {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .valores p {
+        margin: 12px 0;
+    }
+
+    .missao img {
+        height: 100px;
+    }
+} 

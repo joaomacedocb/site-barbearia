@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contato.css">
+    <title>Nosso contato - Barbearia do Seu Zé</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <div class="logo">
+                <a href=index.html><img src="./img/logo.png" alt="Figura do logo da Barbearia do Seu Zé"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href="produtos.html">Serviços</a></li>
+                    <li><a href="./horário.html">Horários</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <h1>Área de contato</h1>
+            <label for="nomesobre">Nome e sobrenome</label>
+            <input type="text" id="nomesobre" class="input-padrao" required placeholder="Digite o seu nome completo aqui">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="Exemplo: 'seuemail@email.com'">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="Exemplo: '(DDD) 9XXXX-XXXX'">
+            
+            <label for="texto-mensagem">Digite a sua mensagem:</label>
+            <textarea cols="80" rows="10" id="texto-mensagem" class="input-padrao" required></textarea>
+            <fieldset>
+                <legend>Como prefere receber o nosso retorno?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="E-mail" id="radio-email" checked> E-mail</label>
+                <label for="radio-telefone"><input type="radio" name="contato" value="Telefone" id="radio-telefone"> Telefone</label>
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="WhatsApp" id="radio-whatsapp"> WhatsApp</label>
+            </fieldset>
+            <fieldset>
+            <legend>Qual turno prefere que o contato seja realizado?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+            <label class="checkbox"><input type="checkbox"> Quero receber novidades através do meu e-mail</label>
+            <input type="submit" value="Enviar" class="enviar">
+        </form>
+    </main>
+    <footer>
+        <img src="./img/bigodelogo.png">
+        <p>Fazendo a diferença na vida dos clientes desde 2015</p>
+    </footer>
+</body>
