@@ -5,43 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-header {
-    background-color: #f0f0f0;
-    padding: 10px;
-}
-
-.main-header {
-    position: relative;
-    width: 1080px;
-    margin: 0 auto;
-}
-
-nav {
-    position: absolute;
-    top: 22px;
-    right: 0px;
-}
-
-nav li {
-    display: inline;
-    margin-left: 20px;
-}
-
-nav a {
-    text-transform: uppercase;
-    color: #575757;
-    font-weight: bold;
-}
-
-nav a:hover {
-    font-size: 20px;
-    color: rgb(48, 163, 48);
-    transition:ease-in 500ms;
-}
-
 main {
-    width: 1080px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 2rem;
 }
 
 form {
@@ -107,4 +74,53 @@ footer {
      font-size: 12px;
      padding-bottom: 30px;
      color: #575757;
+ }
+
+ @media screen and (max-width: 480px) {
+
+     .main-header ul {
+             display: flex;
+             flex-direction: column;
+             margin: 1rem 0;
+             align-items: flex-start;
+             justify-content: space-between;
+     }
+
+     .menu-opcoes {
+             margin-bottom: 0.5rem;
+             display: flex;
+             flex-direction: space-evenly;
+     }
+
+     .main-header ul li a {
+             margin-bottom: 0.5rem;
+             display: flex;
+             flex-direction: space-evenly;
+     }
+
+     .input-padrao {
+         display: block;
+         margin-bottom: 16px;
+         padding: 10px 5px;
+         width: 80%;
+     }
+
+     .checkbox {
+         margin-top: 16px;
+         width: 80%;
+     }
+
+     .enviar {
+         width: 80%;
+         padding: 10px 0;
+         background-color: #575757;
+         color: #f0f0f0;
+         font-size: 20px;
+         font-weight: bold;
+         border: none;
+         border-radius: 5px;
+         margin-top: 24px;
+         transition: 1s all;
+     }
+
  }

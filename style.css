@@ -6,35 +6,54 @@
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     background-color: #f0f0f0;
-    padding: 10px;
 }
 
 .main-header {
-    position: relative;
-    width: 1080px;
-    margin: 0 auto;
+    width: 1vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 nav {
-    position: absolute;
-    top: 22px;
-    right: 0px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40rem;
+
+}
+
+.logo-div {
+    margin-left: 4rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 nav li {
-    display: inline;
-    margin-left: 20px;
+    display: flex;
+    text-decoration: none;
+    margin-right: 1rem;
+
 }
 
 nav a {
     text-transform: uppercase;
     color: #575757;
+    decoration: none;
     font-weight: bold;
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-between;
 }
 
 nav a:hover {
-    font-size: 20px;
+    font-size: 1rem;
     color: rgb(48, 163, 48);
     transition:ease-in 500ms;
 }
@@ -59,11 +78,11 @@ body {
 }
 
 .whatsapp {
-    width: 30%;
-    padding: 10px 0;
+    width: 18rem;
+    padding: 1rem 0;
     background-color: #575757;
     color: #f0f0f0;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: bold;
     border: none;
     border-radius: 5px;
@@ -75,7 +94,7 @@ body {
 }
 
 .whatsapp img {
-    width: 30px;
+    width: 2rem;
 }
 
 .whatsapp:hover {
@@ -169,28 +188,38 @@ footer {
 
 @media screen and (max-width: 480px) {
 
-    header .logo-div {
-        display: none;
+    .main-header ul {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0;
+            align-items: flex-start;
+            justify-content: space-between;
+    }
+
+    nav {
+        margin-left: 4rem;
+    }
+
+    .menu-opcoes {
+            display: flex;
+            flex-direction: space-evenly;
     }
 
     .main-header ul li a {
-        position: static;
-        color: #f0f0f0;
+            margin-bottom: 0.5rem;
+            display: flex;
+            flex-direction: space-evenly;
     }
 
     .main-header, .valores, .missao, .beneficios, .beneficios-cab, main {
-    width: 90%;}
-
-    .logo {
-        text-align: center;
-    }
+    width: 100%;}
 
     .apresentacao .apresentacao-texto {
         width: 90%;
     }
 
     .apresentacao .apresentacao-texto h1 {
-        font-size: 32px;
+        font-size: 1rem;
     }
 
     .beneficios {

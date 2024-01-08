@@ -5,48 +5,16 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-header {
-    background-color: #f0f0f0;
-    padding: 10px;
-}
-
-.main-header {
-    position: relative;
-    width: 1080px;
-    margin: 0 auto;
-}
-
-nav {
-    position: absolute;
-    top: 22px;
-    right: 0px;
-}
-
-nav li {
-    display: inline;
-    margin-left: 20px;
-}
-
-nav a {
-    text-transform: uppercase;
-    color: #575757;
-    font-weight: bold;
-}
-
-nav a:hover {
-    font-size: 20px;
-    color: rgb(48, 163, 48);
-    transition:ease-in 500ms;
-}
-
 main {
-    width: 1080px;
+    width: 1vh;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 h2 {
-    margin: 18px 0;
-    
+    margin: 4rem 0;
 }
 
 table {
@@ -88,4 +56,27 @@ footer {
      font-size: 12px;
      padding-bottom: 30px;
      color: #575757;
+ }
+
+ @media screen and (max-width: 480px) {
+
+    main {
+        padding: 1rem;
+    }
+
+     main h2 {
+         font-size: 1rem;
+     }
+
+     table {
+         width: 80%;
+     }
+
+    table thead {
+        background-color: #575757;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: bold;
+}
+
  }
